@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.brand {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 50px;
+}
+.navbar {
+    background: linear-gradient(rgb(88, 84, 86),rgb(76, 73, 75));
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    color: white    ;
+}
+.nav-link {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px;
+}
+.nav-link:hover {
+    text-decoration: underline;
+    color: pink;
+}
+.hero-sec, .about-sec, .skills-sec, .portfolio-sec, .contact-sec{
+    background-color: gray;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.hero-sec-text, .about-sec-text {
+    display: flex;
+    flex-direction: column;
+}
+.text2 {
+    color: pink;
+}
+.text1, .text3, .about-text2{
+    font-size: 35px;
+    font-weight: 500;
+}
+.text2, .about-text1, .project-text1, .contact-text1{
+    font-size: 80px;
+    font-weight: 700;
+}
+.text4, .about-text3 {
+    width: 500px;
+}
+
+.hero-img img, .about-img img {
+    width: 500px;
+    margin: 50px;
+    border: 5px solid pink;
+    border-radius: 0px 200px 0px ;
+    box-shadow: 1px 4px 1px 4px;
+    background-color: pink;
+    padding: 0px 10px;
+}
+.hero-img img:hover, .about-img img:hover {
+    border-radius: 200px 0px 200px ;
+}
+.socmed {
+    display: flex;
+}
+.socmed i {
+   color: pink;
+   margin: 5px;
+   font-size: 40px;
+} 
+.socmed i:hover {
+    color: white;
+   font-size: 50px;
+} 
+/* about us page */
+.highlighted-text {
+    color:pink;
+}
+.view-btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    width: 30%;
+    background-color: pink;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 80px;
+}
+.view-btn:hover {
+    background-color: rgb(225, 184, 191);
+    color: white;
+}
+/* skills sec */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    padding: 50px;
+    margin: 30px;
+    border: 1px solid pink;
+    color: pink;
+    width: 350px;
+}
+.skills:hover {
+    color: white;
+    border: 1px solid rgb(76, 73, 75);
+}
+.skills span {
+    font-size: 50px;
+}
+.projects-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+.project-card a {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+.projects img { 
+    width: 300px;
+    border: 3px solid pink;
+    padding: 10px;
+}
+.projects img:hover {
+    border: 3px solid white;
+    width: 310px;
+}
+.link:hover {
+    color: rgb(163, 150, 150);
+}
+/* contact sec */
+.contact-text {
+    display: flex;
+    flex-direction: column;
+}
+.submit-btn {
+    font-size: 20px;
+    background-color: pink;
+    border: 1px solid pink;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.submit-btn:hover {
+    font-size: 22px;
+    background-color: rgb(246, 208, 214);
+}
+@media only screen and (max-width: 978px) {
+    .brand {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .brand {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0px;
+    }
+    .hero-sec, .about-sec, .skills-sec, .portfolio-sec, .contact-sec{ 
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .text1, .text3, .about-text2{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .text2, .about-text1, .project-text1, .contact-text1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .text4, .about-text3 {
+        width: 300px;
+        font-size: 15px;
+    }
+    .hero-img, .about-img{
+        width: 180px;
+    }
+    .socmed {
+        display: flex;
+        font-size: 40px;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid pink;
+        width: 150px;
+    }
+    .skills span {
+        font-size: 20px;
+    }
+}
